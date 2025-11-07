@@ -84,3 +84,5 @@ const startServer = async () => {
 };
 
 startServer();
+
+module.exports = fastify
