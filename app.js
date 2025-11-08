@@ -67,7 +67,7 @@ fastify.setErrorHandler((error, request, reply) => {
 });
 
 fastify.register(require("./routes/apiRoute"), { prefix: "/api" });
-fastify.register(require("./plugins/db"));
+// fastify.register(require("./plugins/db"));
 
 fastify.get("/hello", async (req, reply) => {
   reply.send("Hello, Fastify is running!");
